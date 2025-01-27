@@ -1,0 +1,362 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header{
+    height: 100vh;
+    background: url(img/home_bg.jpeg) center center/cover no-repeat;
+    position: relative;
+}
+.nav{
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+}
+.logo img{
+    width: 80px;
+    height: 80px;
+    margin: 8px 8px 8px 150px;
+}
+ul{
+    margin: 32px 150px ;
+}
+li{
+    padding: 16px;
+    display: inline;
+}
+li a{
+    text-decoration: none;
+    color: white;
+}
+.content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 75%;
+}
+.content h1{
+    color: white;
+    font-size: 50px;
+    padding-bottom: 16px;
+}
+.content span{
+    color: #FFEB55;
+}
+.content p{
+    font-size: 20px;
+    color: rgb(224, 222, 222);
+    padding-bottom: 16px;
+}
+.content a{
+    text-decoration: none;
+    cursor: pointer;
+    color: white;
+    border: 1px solid white;
+    border-radius: 10px;
+    padding: 10px 20px;
+}
+header::before{
+    content: "";
+    background: rgb(0, 0, 0,0.5);
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+header *{
+    z-index: 10;
+}
+/* about section start*/
+#about{
+    margin-bottom: 32px;
+}
+.title{
+    text-align: center;
+    padding-top: 100px;
+    padding-bottom: 32px;
+}
+.title h1{
+    font-size: 60px;
+    color: #181C14;
+    margin-bottom: 16px;
+}
+.title p{
+    color:#595b52;
+    margin-bottom: 32px;
+}
+.container{
+    display: flex;
+    justify-content: space-between;
+}
+.about-content{
+    margin: 100px;
+}
+.about-content p{
+    line-height: 1.6;
+    margin-right: 70px;
+    color: #595b52;
+}
+.btn-learn{
+    margin-top: 50px;
+}
+.btn-learn a{
+    text-decoration: none;
+    text-transform: uppercase;
+    text-align: center;
+    color: white;
+    cursor: pointer;
+    border: 1px solid #3C3D37;
+    border-radius: 10px;
+    background-color: #3C3D37;
+    padding: 16px 32px;
+    font-size: 16px;
+}
+.about-img{
+    margin-right: 100px;
+}
+/* about section end*/
+#offer{
+    height: 100vh;
+    background: url(img/offer-background.jpg) center center/cover fixed no-repeat;
+}
+.title-offer{
+    text-align: center;
+    padding-top: 100px;
+    padding-bottom: 16px;
+}
+.title-offer h1{
+    font-size: 60px;
+    color: #FFEB55;
+    margin-bottom: 16px;
+}
+.title-offer p{
+    color:#595b52;
+    margin-bottom: 32px;
+}
+.dishes{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    margin: 50px 90px;
+}
+.dish img{
+    padding-bottom: 16px;
+    width: 200px;
+    height: 200px;
+}
+.content-dish h3{
+    padding: 16px;
+    color: white;
+}
+.content-dish p{
+    color: white;
+    line-height: 1.6;
+    padding-bottom: 8px;
+    color: #595b52;
+}
+.content-dish del{
+    color: #595b52;
+}
+.content-dish span{
+    color: #FFEB55;
+}
+#menu{
+    margin: 40px 90px;
+}
+.menu-item{
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    align-items: center;
+    margin: 20px
+}
+.menu-item img{
+    border-radius: 50%;
+    width: 100px;
+}
+.menu-content h3 {
+    padding-left: 16px;
+    font-size: 18px;
+    border-left: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: dashed 1px #c2bdbd;
+    padding-bottom: 8px;
+}
+.menu-content span{
+    color: #FFEB55;
+    padding-left: 40px;
+}
+.menu-content p{
+    padding: 16px;
+}
+.explore-btn{
+    background-color: #FFEB55;
+    border: none;
+    padding: 15px 50px;
+    border-radius: 15px;
+    display: block;
+    margin: auto;
+    margin-top: 40px;
+}
+#daytime{
+    background: url(img/daytime_bg.jpeg) center center/cover fixed no-repeat;  
+    text-align: center;
+    color: #fff;
+}
+
+.daytime-items{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+    height: 40vh;
+}
+.daytime-item h3{ 
+    font-size: 50px;
+    margin: 10px;
+}
+#gallery{
+    background: url(img/offer-background.jpg) center center/cover ;
+    padding: 50px 200px;
+}
+.img-gallery{
+    display:flex ;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.gallery-items h2{
+    color: #fff;
+    font-size: 60px;
+    text-align: center;
+    padding-bottom: 50px;
+}
+.img-gallery img{
+    margin: 20px;
+  width: 280px;
+  height: 200px;
+  border-radius: 15px;
+  opacity: 0.8;
+}
+#footer{
+    background-color: #FFEB55;
+    height: 20vh;
+}
+.rabha{
+    margin: auto;
+    text-align: center;
+    margin-top: 40px ;
+}
+.rabha h1{
+    padding-bottom: 8px;
+}
+@media (max-width: 1000px) {
+    #navbar img {
+      margin-left: 20px;
+    }
+  
+    nav ul {
+      margin-right: 20px;
+    }
+  
+    nav ul li a {
+      padding: 10px;
+    }
+  
+    header .content h1 {
+      font-size: 28px;
+    }
+  
+    #about {
+      height: auto;
+      padding: 4rem 2rem;
+    }
+  
+    #about .about-content p {
+      margin-right: 2rem;
+    }
+  
+    #about img {
+      width: 250px;
+    }
+  
+    #offers .offers-items img {
+      width: 150px;
+    }
+  
+    #offers .offers-items h3 {
+      font-size: 18px;
+    }
+  
+    #menu .menu-items {
+      display: block;
+    }
+  
+    #contact .contact-content {
+      flex-direction: column;
+    }
+    @media (max-width: 600px) {
+        #navbar {
+          flex-direction: column;
+        }
+    
+        #navbar img {
+          margin-bottom: 20px;
+        }
+    
+        header .content h1 {
+          font-size: 18px;
+        }
+    
+        header .content p {
+          font-size: 14px;
+        }
+    
+        #about .about-content {
+          flex-direction: column;
+        }
+    
+        #about .about-content a {
+          margin: 2rem 0;
+        }
+    
+        #about img {
+          display: none;
+        }
+    
+        #offers {
+          height: auto;
+          padding: 30px 10px;
+        }
+    
+        #offers .offers-items {
+          flex-direction: column;
+        }
+    
+        #menu .menu-items .menu-item {
+          margin: 20px 10px;
+        }
+    
+        #daytime .daytime-items {
+          display: block;
+          height: auto;
+          padding: 30px 0;
+        }
+    
+        #daytime .daytime-items .daytime-item {
+          margin-top: 20px;
+        }
+    
+        #contact .contact-info,
+        form {
+          width: 80%;
+        }
+      }
+    }
